@@ -1,0 +1,12 @@
+---
+layout: autolang
+ref: home
+---
+<div class="wrapper" style="text-align: right; line-height: 2em">
+    {% assign pages=site.pages | where:"ref", "index" | sort: 'lang' %}
+    {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a>
+    {% endfor %}
+</div>
+<div class="home">
+    
+</div>
