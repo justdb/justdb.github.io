@@ -10,7 +10,7 @@ langs: cn,en
 title:
   en: JustDB database development tool
   cn: JustDB 数据库开发工具
-email: justdb@alot.pw
+#email: justdb@verydb.org
 description:
   en: JustDB database development tool
   cn: JustDB 数据库开发工具
