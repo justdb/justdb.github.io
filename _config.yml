@@ -17,6 +17,7 @@ description:
 index:
   en: en/
   cn: cn/
+  nil: 
 feed:
   en: /en/feed.xml
   cn: /cn/feed.xml
