@@ -6,6 +6,6 @@ date:   2019-10-24 09:48:44 +0800
 categories: en justdb database
 lang: en
 ---
-You can find this JustDB theme at :
+You can find this JustDB at :
 {% include icon-github.html username="justdb" %} /
 [JustDB](https://github.com/justdb/)
