@@ -28,7 +28,7 @@
           class="page-link {{ page.lang }}">{{ page.lang }}</a>{% endfor %}
         {% assign pages=site.pages | where:"top", true| where:"lang", pagelang %}
         {% assign nolang_pages=site.pages | where:"top", true| where:"lang", nil %}
-        {% assign pages= pages | concat: nolang_pages %}
+        {% assign pages= pages | concat: nolang_pages |uniq%}
         {% for my_page in pages %}
         {% if my_page.title %}
          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
