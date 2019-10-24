@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {% assign posts=site.posts | where:"lang", page.lang %}
-  {% assign nolang_posts=site.posts | where:"lang", null %}
+  {% assign nolang_posts=site.posts | where:"lang", nil %}
   {% assign posts=nolang_posts | concat: posts %}
   {% for post in posts %}
     {% if post.id contains "404" %}{% else %}
@@ -17,7 +17,7 @@
     {% endif %}
   {% endfor %}
   {% assign pages=site.pages | where:"lang", page.lang %}
-  {% assign nolang_pages=site.pages | where:"lang", null %}
+  {% assign nolang_pages=site.pages | where:"lang", nil %}
   {% assign pages=nolang_pages | concat: pages %}
   {% for page in pages %}
     {% if page.id contains "404" %}{% else %}
