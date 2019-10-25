@@ -7,14 +7,33 @@
         return;
       }
       var language = window.navigator.userLanguage || window.navigator.language;
-      for (var lang in langs) {
-        lang = langs[lang];
-        if (language.indexOf(lang + "-")) {
-          gotoLang(lang);
-          return;
+      var lang = matchLang(langs, language);
+      if (lang) {
+        gotoLang(lang);
+        return;
+      }
+      var allowLangs = window.navigator.languages;
+      if (allowLangs) {
+        for (var browserLang in allowLangs) {
+          browserLang = allowLangs[browserLang];
+          var lang = matchLang(langs, browserLang);
+          if (lang) {
+            gotoLang(lang);
+            return;
+          }
         }
       }
+
       gotoLang("en");
+    }
+    function matchLang(langs, browserLang) {
+      for (var lang in langs) {
+        lang = langs[lang];
+        if (browserLang==lang || browserLang.indexOf(lang + "-") >= 0 || browserLang.toLowerCase().indexOf("-" + lang) > 0) {
+          return lang;
+        }
+      }
+      return false;
     }
     function gotoLang(language) {
       console.log(language);
