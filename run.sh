@@ -1,3 +1,3 @@
 #!/bin/sh
-jekyll clean
-jekyll serve --watch --livereload
+bundle exec jekyll clean
+bundle exec jekyll serve --watch --livereload
