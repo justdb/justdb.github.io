@@ -1,0 +1,35 @@
+---
+layout: default
+title: Demos
+ref: demos
+top: true
+langless: true
+---
+<div class="demos">
+   Demos In XML(It can be xml,yml,json,hjson,toml,sql)
+{% highlight xml %}
+<Justdb id="clouddb" comment="This is a demo database description" schema="##default" catelog="clouddb" namespace="org.verydb.clouddb">
+  <Import id="demo-id" namespace="demo-namespace"/>
+  <Property name="p1" value="pv1" dbms="*"/>
+  <Column id="g_table1_id" name="id" type="int"/>
+  <Table id="table1" name="Table1">
+    <Column id="t_table1_id" refId="g_table1_id" oldNames="table1_id" autoIncrement="true" nullable="true" primaryKey="true" primaryKeyName="pk_table1_id"/>
+    <Column id="col1" comment="This is the comment" name="Column1" type="varchar(255)" defaultValue="test"/>
+    <Column id="col2" name="Column2" type="varchar(255)"/>
+    <xxxx>yyyy</xxxx>
+  </Table>
+  <Table id="table2" name="Table2">
+    <Column id="t_table2_id" name="id" type="int" autoIncrement="true" nullable="true" primaryKey="true" primaryKeyName="pk_table2_id"/>
+    <Column id="t_table2_foreignkey" refId="g_table1_id" name="table1_id"/>
+    <Column id="col3" name="Column3" type="varchar(255)"/>
+  </Table>
+  <Include id="include-id" namespace="include-namespace"/>
+  <Table id="table2"/>
+  <Table id="table3"/>
+  <Table id="table4"/>
+  <DemoAddon id="this is a demo">
+    <sql>demo text</sql>
+  </DemoAddon>
+</Justdb>
+{% endhighlight %}
+</div>

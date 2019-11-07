@@ -6,7 +6,4 @@ ref: start
 top: true
 lang: en
 ---
-TBD
-You can find this JustDB at :
-{% include icon-github.html username="justdb" %} /
-[JustDB](https://github.com/justdb/)
+TBD  

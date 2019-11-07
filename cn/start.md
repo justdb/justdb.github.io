@@ -6,7 +6,4 @@ ref: start
 top: true
 lang: cn
 ---
-TBD
-JustDB 数据库开发工具 :
-{% include icon-github.html username="justdb" %} /
-[JustDB](https://github.com/justdb/)
+TBD  

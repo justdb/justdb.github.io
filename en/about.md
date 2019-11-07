@@ -6,7 +6,6 @@ ref: about
 top: true
 lang: en
 ---
-
-You can find this JustDB at :
-{% include icon-github.html username="justdb" %} /
-[JustDB](https://github.com/justdb/)
+JustDB is a "what you see is what you get" database schema management tool.  
+With JustDB, developers just need to write the final database schemas. They can make any changes to the database schemas, JustDB will do the left to make sure the databases are prepared as needed. JustDB will do the left to make sure you get the database schemes applied to your real database.  
+We are working hard on JustDB to make it archived. Stay tuned.
