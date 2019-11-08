@@ -9,10 +9,23 @@ langless: true
     {% endfor %}
 </div>
 <div class="home">
-    What's the best practices for developers to manage database schemas and data changes?  
-The answers are mostly referred to some db change scripts management solutions such flyway or liquibase. With these solutions, developers need to write database delta migration scripts and ordered them in certain orders. You should never ever touch any existing scripts otherwise you may meet some issue. You will not able to see the final database structure until you run these script. You may see the errors you made in your database scripts from the very beginning.  
-Is there any solution which can help organize your database refactoring just like what you do with your code?  
-We don't find such a solution. That's why we create this project JustDB.  
-With JustDB, developers just need to write the final database schemas. They can make any changes to the database schemas, JustDB will do the left to make sure the databases are prepared as needed. What you see is what you get.  
-We are working hard on JustDB to make it archived. Stay tuned.
+    <p>What’s the best practices for developers to manage database schemas and data changes?<br>
+        The answers are mostly referred to some db change scripts management solutions such flyway or liquibase. With
+        these solutions, developers need to write database delta migration scripts and ordered them in certain orders.
+        You should never ever touch any existing scripts otherwise you may meet some issue. You will not able to see the
+        final database structure until you run these script. You may see the errors you made in your database scripts
+        from the very beginning.<br>
+        Is there any solution which can help organize your database refactoring just like what you do with your
+        code?<br>
+        We don’t find such a solution. That’s why we create this project JustDB.<br>
+        With JustDB, developers just need to write the final database schemas. They can make any changes to the database
+        schemas, JustDB will do the left to make sure the databases are prepared as needed. What you see is what you
+        get.<br>
+        We are working hard on JustDB to make it archived. Stay tuned.</p>
+    <p>什么是数据库集成的最佳实践？<br>
+        这个问题的答案通常会是flyway,liquibase等数据库变更脚本的管理工具。这些工具一般要求开发者事无巨细的写各种数据库的变更脚本，并将这些脚本按照一定的顺序管理起来。这些方案能确实解决了数据库变更的问题。但是，它们也有各种各样的问题，例如你不能改变现有脚本，否则可能会遇到麻烦；你无法轻易看到数据库对象的最终形式，只有在全部执行之后才知道数据库里有什么对象；你可能会看到你一开始犯得错误一直保留在数据库脚本里无法删除。<br>
+        那么，有没有一种方案可以让你和重构代码一样重构数据库呢？<br>
+        我们暂时没找到这个方案。这也是为什么我们要开启JustDB这个项目。<br>
+        这个项目旨在提供这样一个选项。使用JustDB,开发者只需要写数据库最终的样子。如果需要他们可以随时更改数据库定义。JustDB将确保真实的数据库按照预期的被生成和变更。所见即所得。<br>
+        我们正在紧张的开发JustDB,敬请期待。</p>
 </div>
